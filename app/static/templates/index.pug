@@ -1,0 +1,24 @@
+doctype html
+html(lang='pt-br')
+
+  head
+    title MadGO
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(name="author" content="Jhonata Morais")
+    meta(http-equiv="X-UA-Compatible" content="IE=EmulateIE11")
+    meta(http-equiv="cache-control" content="no-cache")
+    meta(http-equiv="expires" content="-1")
+    meta(http-equiv="pragma" content="no-cache")
+    link(rel='stylesheet', href='assets/stylesheets/application.css', media="all")
+
+  body
+    header(class="x-header")
+      include includes/header
+    main(class="container")
+      include views/section-welcome
+      include views/section-content
+    footer
+      include includes/footer
+    script(type="text/javascript", src='assets/javascripts/plugins.js')
+    script(type="text/javascript", src='assets/javascripts/bundle.js')

@@ -1,0 +1,82 @@
+.x-secondSection
+	text-align center
+	+media('desktop')
+		text-align left
+		background-color lightGray
+		margin-bottom 40px
+		margin-top 20px
+	.x-first
+		+media('desktop')
+			display flex
+			margin-top -12px
+	.x-second
+		+media('desktop')
+			display flex
+			margin-top -12px
+	.x-center
+		+media('desktop')
+			width 80%
+			display block
+			margin 40px auto 20px auto
+	.slick-arrow
+		font-size 0px
+		display block
+	.x-subtitle
+		font-size 18px
+		font-weight 400
+		text-transform uppercase
+		margin 15px 0 5px 0
+		position relative
+		z-index 33
+	.x-greenbar
+		display block
+		width 47px
+		height 4px
+		margin 5px auto 0 auto
+		background-color greenColor
+		position relative
+		z-index 0
+		bottom 18px 
+		+media('desktop')
+			margin 3px	
+	.x-text
+		font-size 12px
+		line-height 18px
+		font-weight 400
+		display block
+		width 90%
+		margin 0 auto 25px auto
+		+media('desktop')
+			width auto
+			margin 0
+	.x-firstBanners
+		+media('tablet')
+			width 448px
+			margin 0 auto
+		+media('desktop')
+			width 50%
+		.x-list__firstBanners
+			position relative
+			li 
+				img
+					height 100%
+					+media('desktop')
+						width 100%
+	.x-secondBanners
+		+media('tablet')
+			width 448px
+			margin 0 auto
+		+media('desktop')
+			width 50%
+			order 2
+		.x-secondDescription
+			+media('desktop')
+				order 1
+		.x-list__secondBanners
+			position relative
+			
+			li 
+				img
+					height 100%
+					+media('desktop')
+						width 100%

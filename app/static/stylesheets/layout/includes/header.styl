@@ -1,0 +1,101 @@
+.x-header
+	background-color #6f6f6f
+	clear both
+	+media('desktop')
+		&::before
+			content ''
+			display block
+			clear both
+		&::after
+			content ''
+			display block
+			clear both
+	.x-logo
+		padding 17.5px 0
+		+media('desktop')
+			grid(40%)
+			font-size 18px
+	.container
+		position relative
+	.x-nav
+		display block
+		width 100%
+		transition all 300ms ease
+		background-color lightGray
+		text-align center
+		height 100%
+		position fixed
+		top 0
+		z-index 99
+		right -100%
+		+media('desktop')
+			grid(60%)
+			position initial
+			height auto
+			background-color transparent
+		.x-navList
+			margin-top 40px
+			+media('desktop')
+				margin-top 0
+			.x-listItem
+				width 100%
+				padding 10px 0
+				+media('desktop')
+					display inline-block
+					width auto
+					padding 17.5px 10px 
+				a
+					color black
+					text-transform uppercase
+					+media('desktop')
+						color #fff
+						font-weight 400
+						font-size 18px
+						transition all 200ms ease
+						&:hover
+							color greenColor
+	.x-hamburguer
+		display block
+		width 27px
+		height 5px
+		transition all 300ms ease
+		background-color #fff
+		position absolute
+		right 5px
+		top 15px
+		+media('desktop')
+			display none
+		&::after
+			content ''
+			display block
+			width 27px
+			height 5px
+			background-color #fff
+			position relative
+			right 0px
+			top 3px
+		&::before
+			content ''
+			display block
+			width 27px
+			height 5px
+			background-color #fff
+			position relative
+			right 0px
+			top 16px
+			
+	.x-navActive
+		right 0
+	.x-hamburguerActive
+		position fixed
+		right 15px
+		top 24px
+		transform rotate(40deg)
+		z-index 999
+		background-color red
+		&::before
+			display none
+		&::after
+			transform rotate(100deg)
+			top 0
+			background-color red
