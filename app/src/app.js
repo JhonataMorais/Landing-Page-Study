@@ -37,7 +37,7 @@ function secondSlick(){
 	$('.x-list__secondBanners').slick({
 		autoplay: true,
 		autoplaySpeed: 3000,
-		speed: 800,
+		speed: 800, 
 		dots: false,
 		fade: false,
 		arrows: true
